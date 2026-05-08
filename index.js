@@ -17,7 +17,8 @@ connectDB();
 
 // Configure CORS before other middleware
 app.use(cors({
-  origin: ['http://localhost:5000', 'http://localhost:5173','https://healthsetu.netlify.app','https://demand-forecasting-43jv.onrender.com'], // Allow both ports
+  //origin: ['http://localhost:5000', 'http://localhost:5173','https://healthsetu.netlify.app','https://demand-forecasting-43jv.onrender.com',], // Allow both ports
+  origin: ['http://localhost:5000', 'http://localhost:5173','https://healthsetu.netlify.app','https://demand-forecasting-43jv.onrender.com',],
   credentials: true,
   methods: ['GET', 'POST', 'OPTIONS','PUT','DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
